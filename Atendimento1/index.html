@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - DOM - Atividade de Desconto Personalizado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+  <h1 class="display-5">Atividade de Desconto Personalizado</h1>
+  <hr>
+
+  <table class="table table-striped" id="tabela_produtos">
+    <thead class="">
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Preço com Desconto</th>
+      </tr>
+    </thead>
+    <tbody class="">
+      <tr>
+        <td class="produto_nome">Notebook Lenovo 15IGL05</td>
+        <td class="produto_preco">1000.00</td>
+        <td class="produto_desconto">0.00</td>
+      </tr>
+      <tr>
+        <td class="produto_nome">Furadeira 12V 3/8</td>
+        <td class="produto_preco">100.00</td>
+        <td class="produto_desconto">0.00</td>
+      </tr>
+      <tr>
+        <td class="produto_nome">Smart TV 4K</td>
+        <td class="produto_preco">799.99</td>
+        <td class="produto_desconto">0.00</td>
+      </tr>
+      <tr>
+        <td class="produto_nome">Samsung Galaxy S22</td>
+        <td class="produto_preco">1199.00</td>
+        <td class="produto_desconto">0.00</td>
+      </tr>
+      <tr>
+        <td class="produto_nome">Impressora Multifuncional</td>
+        <td class="produto_preco">199.50</td>
+        <td class="produto_desconto">0.00</td>
+      </tr>
+      <!-- Adicione mais produtos aqui -->
+    </tbody>
+  </table>
+
+  <label for="selectDesconto">Selecione o desconto:</label>
+  <select class="form-select" id="selectDesconto">
+    <option value="0">Sem desconto</option>
+    <option value="0.10">10%</option>
+    <option value="0.20">20%</option>
+    <option value="0.30">30%</option>
+    <option value="0.40">40%</option>
+    <option value="0.50">50%</option>
+  </select>
+
+  <button class="btn btn-primary mt-5" id="aplicarDescontoBtn">Aplicar Desconto</button>
+
+  <hr>
+  <script src="script.js"></script>
+</body>
+</html>
